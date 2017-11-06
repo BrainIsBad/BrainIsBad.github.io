@@ -1,6 +1,7 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+
 @media only screen and (max-width : 1200px) {
 
 }
@@ -12,17 +13,54 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+.logo {
+	text-align: center;
+}
+.contacts {
+	margin-top: 16px;
+}
+.top_mnu ul {
+	display: none;
+	position: absolute;
+	width: 100%;
+	z-index: 15;
+}
+.banner_video {
+	margin: 38px 0;
+	padding-left: 146px;
+	background-position: 146px;
+}
+.alg_wrap {
+	background-image: none;
+}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+.contacts,
+.callback a {
+	float: none;
+}
+.banner_text {
+	text-align: center;
+	padding-top: 228px;
+	background-position: center 18px;
+	margin-top: 30px;
+}
+.banner_video {
+	padding: 0;
+	background-position: 0;
+}
+.banner_video iframe {
+	width: 350px;
+}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+.banner_video iframe {
+	width: 300px;
+}
 }
 
 
