@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-	$(".mnu_button").click(function(){
-		$(this).next().show();
-	});
 	//Таймер обратного отсчета
 	//Документация: http://keith-wood.name/countdown.html
 	//<div class="countdown" date-time="2015-01-07"></div>
@@ -88,5 +85,5 @@ $(document).ready(function() {
 
 });
 
-var eqElement = ".class"
+var eqElement = ".alg>ul>li"
 	$(window).load(function(){equalheight(eqElement);}).resize(function(){equalheight(eqElement);});

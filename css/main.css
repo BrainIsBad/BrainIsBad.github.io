@@ -27,34 +27,44 @@ body {
 	font-family: "SFUIDisplay-Regular", sans-serif;
 	font-size: 16px;
 }
-.top{
+
+.top {
 	margin: 22px 0;
+}
+.logo {
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	min-height: 36px;
 }
 .top h1 {
 	font-size: 16px;
+	margin:0 0 0 186px;
 	line-height: 38px;
 }
-.top a {
-	color: #000;
-}
-.contacts {
-	font-family: "SF UI Display Light";
+.contact {
 	float: right;
+	font-family: "SF UI Display Light";
+	font-size: 21px;
+	text-align: right;
 }
 .num {
+	float: right;
 	background-image: url(../img/phone.png);
 	background-repeat: no-repeat;
 	background-position: 0 6px;
-	font-size: 20px;
-	padding-left: 20px;
 }
-.callback a {
+.contact a {
+	color: #000;
+	display: block;
 	text-decoration: underline;
-	float: right;
 	font-size: 13px;
 }
-.callback a:hover {
+.contact a:hover {
 	text-decoration: none;
+}
+.num,
+.contact a {
+	padding-left: 20px;
 }
 .top_mnu {
 	background-color: #eee;
@@ -62,7 +72,7 @@ body {
 .top_mnu ul {
 	list-style-type: none;
 	text-align: center;
-	margin: -24px 0 0;
+	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
 	font-family: "SF UI Display Medium";
@@ -83,40 +93,35 @@ body {
 .top_mnu a.active {
 	border-bottom: 2px solid #ff7200;
 }
-.top_mnu button {
-	background-color: transparent;
-	font-size: 28px;
-	border: none;
-}
-.banner {
+.car {
 	background-image: url(../img/car_bg.png);
 	background-color: #131b2d;
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
 	width: 100%;
 	background-position: center;
 	min-height: 482px;
 }
-.banner_text {
+.car_t {
 	color: #fff;
-	font-size: 31px;
+	font-size: 32px;
 	text-align: right;
 	background-image: url(../img/logo_car.png);
 	background-repeat: no-repeat;
 	margin-top: 136px;
 	background-position: 0 10px;
 }
-.banner_video {
+.car_v {
 	background-image: url(../img/str.png);
 	background-repeat: no-repeat;
 	width: 100%;
+	margin-left: 100px;
 	margin-top: 126px;
-	padding-left: 72px;
-	background-position: 72px;
 }
 .video {
-	padding: 16px 24px 10px;
+	padding: 10px 24px;
+}
+section {
+	font-size: 15px;
 }
 section h2 {
 	text-align: center;
@@ -133,9 +138,9 @@ section a {
 section a:hover {
 	text-decoration: none;
 }
-.button_try {
+.but {
 	text-align: center;
-	margin: 52px 0;
+	margin: 52px;
 }
 .button {
 	display: inline-block;
@@ -155,27 +160,27 @@ section a:hover {
 .button:active {
 	background-color: #ff5200;
 }
-.algorithm {
+.alg {
 	background-color: #eee;
 	font-family: "RobotoRegular";
+	font-size: 12px;
 }
 .alg_wrap {
-	margin: 48px -10px;
+	margin: 48px 0;
 	text-align: center;
 	background-image: url(../img/shape_set.png);
 	background-repeat: no-repeat;
-	background-position: 110px 5px;
+	background-position: 124px 0;
 }
-.algorithm .ic_wrap {
+.alg .ic_wrap {
 	display: inline-block;
 	background-image: url(../img/icon_set.png);
 	background-repeat: no-repeat;
 	padding: 86px 4px 0;
-	max-width: 220px;
+	max-width: 212px;
 	text-align: center;
-	font-size: 12px;
 }
-.algorithm h3 {
+.alg h3 {
 	color: #ff7200;
 	font-size: 17px;
 	margin: 0;
@@ -195,7 +200,7 @@ section a:hover {
 .ic_wrap:nth-child(5) {
 	background-position: -866px 0px;
 }
-.some_text {
+.s_t {
 	background-image: url(../img/bg_pict.png);
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -203,9 +208,19 @@ section a:hover {
 	min-height: 520px;
 
 }
-.some_text h2 {
+.some_t {
+	position: relative;
+	max-width: 512px;
+	left: 632px;
+}
+.some_t h2 {
 	text-align: left;
 	font-size: 32px;
+}
+.form h2 {
+	font-size: 32px;
+	text-align: center;
+	text-transform: uppercase;
 }
 .form {
 	text-align: center;
@@ -214,26 +229,29 @@ section a:hover {
 	border: none;
 	border-bottom: 1px solid #000;
 }
-.form input:active,
-.form input:hover,
-.form input:focus {
-	outline: none;
-}
 button {
 	border: none;
 }
-button:focus,
-button:hover {
-	outline: none;
-}
 .name,
-.numb,
-.comm {
+.numb {
+	margin: 46px 82px 0;
+	display: inline-block;
 	text-align: left;
-	margin: 18px 0;
+	width: 35%;
+}
+.form span {
+	display: block;
+}
+.comm {
+	display: inline-block;
+	margin-top: 46px;
+	text-align: left;
+	width: 85%;
 }
 .name input,
-.numb input,
+.numb input {
+	width: 100%;
+}
 .comm input {
 	width: 100%;
 }
